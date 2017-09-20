@@ -17,6 +17,7 @@
 <script>
   import animateCss from '@/components/AnimateCss'
   import dynamic from '@/components/Dynamic'
+  import { createdMixin, mountedMixin } from '@/util/mixins'
 
   export default {
     name: 'app',
@@ -28,7 +29,8 @@
     components: {
       animateCss: animateCss,
       dynamic: dynamic
-    }
+    },
+    mixins: [createdMixin, mountedMixin]
   }
 
 </script>
